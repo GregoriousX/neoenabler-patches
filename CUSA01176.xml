@@ -91,7 +91,7 @@
             <Line Type="bytes" Address="0x00adf1e6" Value="cb" />
         </PatchList>
     </Metadata>
-    <Metadata Title="LEGO Dimensions" Name="120 FPS - engine target (experimental)" NeoRequires="120hz" Note="Experimental: engine frame target 120 for a 120 Hz display. Includes the line of '60 FPS - engine target', so enable only this frame rate entry. NeoEnabler 0.6.0+ turns the 120 Hz video output on for the game. Tested on PS5 FW 13.60 with Native 4K: normal game speed, about 70-95 fps (the game shows each frame for one or two 120 Hz refreshes)." Author="connorh315, Gregorious" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
+    <Metadata Title="LEGO Dimensions" Name="120 FPS - engine target (experimental)" NeoRequires="120hz" Note="Experimental: engine frame target 120 for a 120 Hz display. Includes the line of '60 FPS - engine target', so enable only this frame rate entry. NeoEnabler 0.6.0+ turns the 120 Hz video output on for the game. Tested on PS5 FW 13.60 with Native 4K: normal game speed, about 70-95 fps, not a locked 120." Author="connorh315, Gregorious" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x00a966ad" Value="bf0200000089389090" />
             <Line Type="bytes" Address="0x02eb1700" Value="0000f042" />
