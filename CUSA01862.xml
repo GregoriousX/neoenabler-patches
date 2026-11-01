@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+    <TitleID>
+        <ID>CUSA01862</ID>
+    </TitleID>
+    <Metadata Title="Disney Infinity 3.0" Name="1080p (PS4 Pro mode)" NeoRequires="pro" Note="1920x1080 in PS4 Pro mode with the fixes the game needs there (display buffer layout, flip mode, depth and colour compression off, render targets cleared in full). Tested on PS5 FW 13.60. Needs NeoEnabler 0.5.3 or newer, which starts the game in PS4 Pro mode. Enable only one resolution entry." Author="GregoriousX" PatchVer="1.0" AppVer="01.06" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x02c1eb00" Value="4883ec38488b44244048890424488b4424484889442408488b4424504889442410488b4424584889442418488b442460488944242048897c2430e8513d93fe488b4c24304883c438814910000000808b5118c1ea1083c27f83e280448b41044181e0ff07000041ffc0410fafd0c1ea03ffca81e2ffff3f00448b41084181e00000c0ff4409c28951084889c148c1e92081f9000001007305b90000010089c2c1ea0301d005ffff0000250000ffff48c1e1204809c8c3" />
+            <Line Type="bytes" Address="0x00466505" Value="e8f6857b02" />
+            <Line Type="bytes" Address="0x02c1ec00" Value="4883ec08e83726abff4883c40885c07801c389c189010f0b" />
+            <Line Type="bytes" Address="0x00466669" Value="e892857b02" />
+            <Line Type="bytes" Address="0x02c1ec40" Value="4883ec28488b44243048890424488b4424384889442408488b4424404889442410e8aa5b93fe4883c42885c07801c389c1480fbae9220f0b" />
+            <Line Type="bytes" Address="0x01559eeb" Value="e8504d6c01" />
+            <Line Type="bytes" Address="0x02c1ecc0" Value="57e84a5593fe5ff74310000000807407814f1800000001c3" />
+            <Line Type="bytes" Address="0x004691b6" Value="e8055b7b02" />
+            <Line Type="bytes" Address="0x02c1ed00" Value="4883ec38488b44244048890424488b4424484889442408488b4424504889442410488b4424584889442418488b4424604889442420e8563b93fe4883c4384889c148c1e92081f9000001007305b90000010089c2c1ea0301d005ffff0000250000ffff48c1e1204809c8c3" />
+            <Line Type="bytes" Address="0x004660f5" Value="e8068c7b02" />
+            <Line Type="bytes" Address="0x007c5b97" Value="e864914502" />
+            <Line Type="bytes" Address="0x02c1ed80" Value="4883ec28488b44243048890424488b4424384889442408488b4424404889442410488b4424484889442418e8a04b93fe4883c4284889c148c1e92081f9000001007305b90000010089c2c1ea0301d005ffff0000250000ffff48c1e1204809c8c3" />
+            <Line Type="bytes" Address="0x007c5bf4" Value="e887914502" />
+            <Line Type="bytes" Address="0x00468a6f" Value="e80c637b02" />
+            <Line Type="bytes" Address="0x00468b0f" Value="e86c627b02" />
+            <Line Type="bytes" Address="0x0049f5d8" Value="e8a3f77702" />
+            <Line Type="bytes" Address="0x004695ae" Value="01" />
+            <Line Type="bytes" Address="0x0154e443" Value="806303df" />
+            <Line Type="bytes" Address="0x01552cfc" Value="00" />
+            <Line Type="bytes" Address="0x01552d7c" Value="00" />
+            <Line Type="bytes" Address="0x0155571d" Value="8165d0ff9fffffeb6790909090909090909090" />
+            <Line Type="bytes" Address="0x02c1ef80" Value="c1e30483e37083fb20750231dbc3" />
+            <Line Type="bytes" Address="0x0154ece9" Value="e892026d0190" />
+            <Line Type="bytes" Address="0x004a6541" Value="e94a01000090" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Disney Infinity 3.0" Name="Native 4K (PS4 Pro mode)" NeoRequires="pro" Note="3840x2160 render and output in PS4 Pro mode with the fixes the game needs there (display buffer layout, flip mode, depth and colour compression off, render targets cleared in full). Set the PS5 video output to 2160p. Tested on PS5 FW 13.60. Needs NeoEnabler 0.5.3 or newer, which starts the game in PS4 Pro mode. Enable only one resolution entry." Author="GregoriousX" PatchVer="1.0" AppVer="01.06" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x0046484d" Value="000f0000" />
+            <Line Type="bytes" Address="0x00464855" Value="70080000" />
+            <Line Type="bytes" Address="0x00465402" Value="000f0000" />
+            <Line Type="bytes" Address="0x0046540d" Value="70080000" />
+            <Line Type="bytes" Address="0x00465438" Value="000f0000" />
+            <Line Type="bytes" Address="0x0046544a" Value="70080000" />
+            <Line Type="bytes" Address="0x004654b7" Value="000f0000" />
+            <Line Type="bytes" Address="0x004654be" Value="70080000" />
+            <Line Type="bytes" Address="0x004664ee" Value="000f0000" />
+            <Line Type="bytes" Address="0x004664f3" Value="70080000" />
+            <Line Type="bytes" Address="0x00469294" Value="000f0000" />
+            <Line Type="bytes" Address="0x00469298" Value="70080000" />
+            <Line Type="bytes" Address="0x004692c7" Value="000f0000" />
+            <Line Type="bytes" Address="0x004692cd" Value="70080000" />
+            <Line Type="bytes" Address="0x004692ee" Value="000f0000" />
+            <Line Type="bytes" Address="0x00469300" Value="70080000" />
+            <Line Type="bytes" Address="0x00469309" Value="000f0000" />
+            <Line Type="bytes" Address="0x0046930f" Value="70080000" />
+            <Line Type="bytes" Address="0x0066571f" Value="000f0000" />
+            <Line Type="bytes" Address="0x00665726" Value="70080000" />
+            <Line Type="bytes" Address="0x02c1eb00" Value="4883ec38488b44244048890424488b4424484889442408488b4424504889442410488b4424584889442418488b442460488944242048897c2430e8513d93fe488b4c24304883c438814910000000808b5118c1ea1083c27f83e280448b41044181e0ff07000041ffc0410fafd0c1ea03ffca81e2ffff3f00448b41084181e00000c0ff4409c28951084889c148c1e92081f9000001007305b90000010089c2c1ea0301d005ffff0000250000ffff48c1e1204809c8c3" />
+            <Line Type="bytes" Address="0x00466505" Value="e8f6857b02" />
+            <Line Type="bytes" Address="0x02c1ec00" Value="4883ec08e83726abff4883c40885c07801c389c189010f0b" />
+            <Line Type="bytes" Address="0x00466669" Value="e892857b02" />
+            <Line Type="bytes" Address="0x02c1ec40" Value="4883ec28488b44243048890424488b4424384889442408488b4424404889442410e8aa5b93fe4883c42885c07801c389c1480fbae9220f0b" />
+            <Line Type="bytes" Address="0x01559eeb" Value="e8504d6c01" />
+            <Line Type="bytes" Address="0x02c1ecc0" Value="57e84a5593fe5ff74310000000807407814f1800000001c3" />
+            <Line Type="bytes" Address="0x004691b6" Value="e8055b7b02" />
+            <Line Type="bytes" Address="0x02c1ed00" Value="4883ec38488b44244048890424488b4424484889442408488b4424504889442410488b4424584889442418488b4424604889442420e8563b93fe4883c4384889c148c1e92081f9000001007305b90000010089c2c1ea0301d005ffff0000250000ffff48c1e1204809c8c3" />
+            <Line Type="bytes" Address="0x004660f5" Value="e8068c7b02" />
+            <Line Type="bytes" Address="0x007c5b97" Value="e864914502" />
+            <Line Type="bytes" Address="0x02c1ed80" Value="4883ec28488b44243048890424488b4424384889442408488b4424404889442410488b4424484889442418e8a04b93fe4883c4284889c148c1e92081f9000001007305b90000010089c2c1ea0301d005ffff0000250000ffff48c1e1204809c8c3" />
+            <Line Type="bytes" Address="0x007c5bf4" Value="e887914502" />
+            <Line Type="bytes" Address="0x00468a6f" Value="e80c637b02" />
+            <Line Type="bytes" Address="0x00468b0f" Value="e86c627b02" />
+            <Line Type="bytes" Address="0x0049f5d8" Value="e8a3f77702" />
+            <Line Type="bytes" Address="0x004695ae" Value="01" />
+            <Line Type="bytes" Address="0x0154e443" Value="806303df" />
+            <Line Type="bytes" Address="0x01552cfc" Value="00" />
+            <Line Type="bytes" Address="0x01552d7c" Value="00" />
+            <Line Type="bytes" Address="0x0155571d" Value="8165d0ff9fffffeb6790909090909090909090" />
+            <Line Type="bytes" Address="0x02c1ef80" Value="c1e30483e37083fb20750231dbc3" />
+            <Line Type="bytes" Address="0x0154ece9" Value="e892026d0190" />
+            <Line Type="bytes" Address="0x004a6541" Value="e94a01000090" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Disney Infinity 3.0" Name="Native 4K (PS4 Pro mode, requires 8 GiB)" NeoRequires="pro,8gib" Note="As 'Native 4K (PS4 Pro mode)' with the 8 GiB memory budget of NeoEnabler (firmware 13.20/13.60 only). Tested on PS5 FW 13.60. Needs NeoEnabler 0.5.3 or newer, which starts the game in PS4 Pro mode. Enable only one resolution entry." Author="GregoriousX" PatchVer="1.0" AppVer="01.06" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x0046484d" Value="000f0000" />
+            <Line Type="bytes" Address="0x00464855" Value="70080000" />
+            <Line Type="bytes" Address="0x00465402" Value="000f0000" />
+            <Line Type="bytes" Address="0x0046540d" Value="70080000" />
+            <Line Type="bytes" Address="0x00465438" Value="000f0000" />
+            <Line Type="bytes" Address="0x0046544a" Value="70080000" />
+            <Line Type="bytes" Address="0x004654b7" Value="000f0000" />
+            <Line Type="bytes" Address="0x004654be" Value="70080000" />
+            <Line Type="bytes" Address="0x004664ee" Value="000f0000" />
+            <Line Type="bytes" Address="0x004664f3" Value="70080000" />
+            <Line Type="bytes" Address="0x00469294" Value="000f0000" />
+            <Line Type="bytes" Address="0x00469298" Value="70080000" />
+            <Line Type="bytes" Address="0x004692c7" Value="000f0000" />
+            <Line Type="bytes" Address="0x004692cd" Value="70080000" />
+            <Line Type="bytes" Address="0x004692ee" Value="000f0000" />
+            <Line Type="bytes" Address="0x00469300" Value="70080000" />
+            <Line Type="bytes" Address="0x00469309" Value="000f0000" />
+            <Line Type="bytes" Address="0x0046930f" Value="70080000" />
+            <Line Type="bytes" Address="0x0066571f" Value="000f0000" />
+            <Line Type="bytes" Address="0x00665726" Value="70080000" />
+            <Line Type="bytes" Address="0x02c1eb00" Value="4883ec38488b44244048890424488b4424484889442408488b4424504889442410488b4424584889442418488b442460488944242048897c2430e8513d93fe488b4c24304883c438814910000000808b5118c1ea1083c27f83e280448b41044181e0ff07000041ffc0410fafd0c1ea03ffca81e2ffff3f00448b41084181e00000c0ff4409c28951084889c148c1e92081f9000001007305b90000010089c2c1ea0301d005ffff0000250000ffff48c1e1204809c8c3" />
+            <Line Type="bytes" Address="0x00466505" Value="e8f6857b02" />
+            <Line Type="bytes" Address="0x02c1ec00" Value="4883ec08e83726abff4883c40885c07801c389c189010f0b" />
+            <Line Type="bytes" Address="0x00466669" Value="e892857b02" />
+            <Line Type="bytes" Address="0x02c1ec40" Value="4883ec28488b44243048890424488b4424384889442408488b4424404889442410e8aa5b93fe4883c42885c07801c389c1480fbae9220f0b" />
+            <Line Type="bytes" Address="0x01559eeb" Value="e8504d6c01" />
+            <Line Type="bytes" Address="0x02c1ecc0" Value="57e84a5593fe5ff74310000000807407814f1800000001c3" />
+            <Line Type="bytes" Address="0x004691b6" Value="e8055b7b02" />
+            <Line Type="bytes" Address="0x02c1ed00" Value="4883ec38488b44244048890424488b4424484889442408488b4424504889442410488b4424584889442418488b4424604889442420e8563b93fe4883c4384889c148c1e92081f9000001007305b90000010089c2c1ea0301d005ffff0000250000ffff48c1e1204809c8c3" />
+            <Line Type="bytes" Address="0x004660f5" Value="e8068c7b02" />
+            <Line Type="bytes" Address="0x007c5b97" Value="e864914502" />
+            <Line Type="bytes" Address="0x02c1ed80" Value="4883ec28488b44243048890424488b4424384889442408488b4424404889442410488b4424484889442418e8a04b93fe4883c4284889c148c1e92081f9000001007305b90000010089c2c1ea0301d005ffff0000250000ffff48c1e1204809c8c3" />
+            <Line Type="bytes" Address="0x007c5bf4" Value="e887914502" />
+            <Line Type="bytes" Address="0x00468a6f" Value="e80c637b02" />
+            <Line Type="bytes" Address="0x00468b0f" Value="e86c627b02" />
+            <Line Type="bytes" Address="0x0049f5d8" Value="e8a3f77702" />
+            <Line Type="bytes" Address="0x004695ae" Value="01" />
+            <Line Type="bytes" Address="0x0154e443" Value="806303df" />
+            <Line Type="bytes" Address="0x01552cfc" Value="00" />
+            <Line Type="bytes" Address="0x01552d7c" Value="00" />
+            <Line Type="bytes" Address="0x0155571d" Value="8165d0ff9fffffeb6790909090909090909090" />
+            <Line Type="bytes" Address="0x02c1ef80" Value="c1e30483e37083fb20750231dbc3" />
+            <Line Type="bytes" Address="0x0154ece9" Value="e892026d0190" />
+            <Line Type="bytes" Address="0x004a6541" Value="e94a01000090" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Disney Infinity 3.0 Edition" Name="60 FPS Unlock V2" Note="Removes both the initial PS4 flip-rate cap and the later Octane flip-rate reset. Tested by user to reach 60 FPS." Author="GregoriousX" PatchVer="2.0" AppVer="mask" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="mask" Address="41 c7 47 48 01 00 00 00 be 01 00 00 00 89 c7 e8 ?? ?? ?? ?? 49 8d bf 78 88 00 00" Value="41c7474800000000be00000000" Offset="+0" />
+            <Line Type="mask" Address="48 8d 05 ?? ?? ?? ?? 48 8b 38 be 02 00 00 00 e8 ?? ?? ?? ?? 48 8d 1d" Value="be01000000" Offset="+10" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Disney Infinity 3.0 Edition" Name="120 FPS (experimental)" Note="Experimental: for a 120 Hz display. The lines of '60 FPS Unlock V2' (the game shows a new frame at every refresh); NeoEnabler 0.6.0+ turns the 120 Hz video output on for the game. Enable only this frame rate entry. Tested on PS5 FW 13.60 with Native 4K: about 70 fps." Author="GregoriousX" PatchVer="2.0" AppVer="mask" AppElf="eboot.bin" NeoRequires="120hz">
+        <PatchList>
+            <Line Type="mask" Address="41 c7 47 48 01 00 00 00 be 01 00 00 00 89 c7 e8 ?? ?? ?? ?? 49 8d bf 78 88 00 00" Value="41c7474800000000be00000000" Offset="+0" />
+            <Line Type="mask" Address="48 8d 05 ?? ?? ?? ?? 48 8b 38 be 02 00 00 00 e8 ?? ?? ?? ?? 48 8d 1d" Value="be01000000" Offset="+10" />
+        </PatchList>
+    </Metadata>
+</Patch>
