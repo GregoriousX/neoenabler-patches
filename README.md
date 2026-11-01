@@ -61,7 +61,7 @@ Testowane na PS5 z firmware 13.60.
 
 ## Autorzy
 
-- GregoriousX: poprawki trybu Pro, wpisy rozdzielczości, efekty, wpisy FPS
+- Gregorious: poprawki trybu Pro, wpisy rozdzielczości, efekty, wpisy FPS
   Disneya, 120 FPS.
 - connorh315: `60 FPS - engine target` (LEGO).
 

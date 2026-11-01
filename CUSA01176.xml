@@ -3,7 +3,7 @@
     <TitleID>
         <ID>CUSA01176</ID>
     </TitleID>
-    <Metadata Title="LEGO Dimensions" Name="1080p (PS4 Pro mode)" NeoRequires="pro" Note="1920x1080 in PS4 Pro mode with the fixes the game needs there (display buffer layout, flip mode, depth compression off). Tested on PS5 FW 13.60. Needs NeoEnabler 0.5.3 or newer, which starts the game in PS4 Pro mode. Enable only one resolution entry." Author="GregoriousX" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
+    <Metadata Title="LEGO Dimensions" Name="1080p (PS4 Pro mode)" NeoRequires="pro" Note="1920x1080 in PS4 Pro mode with the fixes the game needs there (display buffer layout, flip mode, depth compression off). Tested on PS5 FW 13.60. Needs NeoEnabler 0.5.3 or newer, which starts the game in PS4 Pro mode. Enable only one resolution entry." Author="Gregorious" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x02eb1400" Value="4883ec08e807a090ff4883c40885c07801c389c189010f0b" />
             <Line Type="bytes" Address="0x00b14a85" Value="e876c93902" />
@@ -22,7 +22,7 @@
             <Line Type="bytes" Address="0x00b1999c" Value="81ca00000020" />
         </PatchList>
     </Metadata>
-    <Metadata Title="LEGO Dimensions" Name="Native 4K (PS4 Pro mode)" NeoRequires="pro" Note="3840x2160 render and output in PS4 Pro mode, same fixes as the 1080p entry. Set the PS5 video output to 2160p. Tested on PS5 FW 13.60: about 60 fps with '60 FPS - engine target'. Needs NeoEnabler 0.5.3 or newer, which starts the game in PS4 Pro mode. Enable only one resolution entry." Author="GregoriousX" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
+    <Metadata Title="LEGO Dimensions" Name="Native 4K (PS4 Pro mode)" NeoRequires="pro" Note="3840x2160 render and output in PS4 Pro mode, same fixes as the 1080p entry. Set the PS5 video output to 2160p. Tested on PS5 FW 13.60: about 60 fps with '60 FPS - engine target'. Needs NeoEnabler 0.5.3 or newer, which starts the game in PS4 Pro mode. Enable only one resolution entry." Author="Gregorious" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x00b148f8" Value="000f" />
             <Line Type="bytes" Address="0x00b14902" Value="7008" />
@@ -47,7 +47,7 @@
             <Line Type="bytes" Address="0x00b1999c" Value="81ca00000020" />
         </PatchList>
     </Metadata>
-    <Metadata Title="LEGO Dimensions" Name="1440p internal - 2160p output (PS4 Pro mode)" NeoRequires="pro" Note="2560x1440 render, 3840x2160 output in PS4 Pro mode, same fixes as the 1080p entry. Set the PS5 video output to 2160p. Not tested on the console yet. Needs NeoEnabler 0.5.3 or newer, which starts the game in PS4 Pro mode. Enable only one resolution entry." Author="GregoriousX" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
+    <Metadata Title="LEGO Dimensions" Name="1440p internal - 2160p output (PS4 Pro mode)" NeoRequires="pro" Note="2560x1440 render, 3840x2160 output in PS4 Pro mode, same fixes as the 1080p entry. Set the PS5 video output to 2160p. Not tested on the console yet. Needs NeoEnabler 0.5.3 or newer, which starts the game in PS4 Pro mode. Enable only one resolution entry." Author="Gregorious" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x00b148f8" Value="000f" />
             <Line Type="bytes" Address="0x00b14902" Value="7008" />
@@ -77,7 +77,7 @@
             <Line Type="bytes" Address="0x00a966ad" Value="bf0200000089389090" />
         </PatchList>
     </Metadata>
-    <Metadata Title="LEGO Dimensions" Name="Disable depth of field" Note="Optional: turns off the depth of field effect (skips its shader setup and passes). Works with any resolution and FPS entry." Author="GregoriousX" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
+    <Metadata Title="LEGO Dimensions" Name="Disable depth of field" Note="Optional: turns off the depth of field effect (skips its shader setup and passes). Works with any resolution and FPS entry." Author="Gregorious" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x00adbd3b" Value="00" />
             <Line Type="bytes" Address="0x00adedeb" Value="00" />
@@ -85,13 +85,13 @@
             <Line Type="bytes" Address="0x00adf242" Value="00" />
         </PatchList>
     </Metadata>
-    <Metadata Title="LEGO Dimensions" Name="Enable FXAA" Note="Optional: turns on the game's FXAA anti-aliasing. Works with any resolution and FPS entry." Author="GregoriousX" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
+    <Metadata Title="LEGO Dimensions" Name="Enable FXAA" Note="Optional: turns on the game's FXAA anti-aliasing. Works with any resolution and FPS entry." Author="Gregorious" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x00ada164" Value="0d" />
             <Line Type="bytes" Address="0x00adf1e6" Value="cb" />
         </PatchList>
     </Metadata>
-    <Metadata Title="LEGO Dimensions" Name="120 FPS - engine target (experimental)" NeoRequires="120hz" Note="Experimental: engine frame target 120 for a 120 Hz display. Includes the line of '60 FPS - engine target', so enable only this frame rate entry. NeoEnabler 0.6.0+ turns the 120 Hz video output on for the game. Tested on PS5 FW 13.60 with Native 4K: normal game speed, about 70-95 fps (the game shows each frame for one or two 120 Hz refreshes)." Author="connorh315, GregoriousX" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
+    <Metadata Title="LEGO Dimensions" Name="120 FPS - engine target (experimental)" NeoRequires="120hz" Note="Experimental: engine frame target 120 for a 120 Hz display. Includes the line of '60 FPS - engine target', so enable only this frame rate entry. NeoEnabler 0.6.0+ turns the 120 Hz video output on for the game. Tested on PS5 FW 13.60 with Native 4K: normal game speed, about 70-95 fps (the game shows each frame for one or two 120 Hz refreshes)." Author="connorh315, Gregorious" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x00a966ad" Value="bf0200000089389090" />
             <Line Type="bytes" Address="0x02eb1700" Value="0000f042" />
