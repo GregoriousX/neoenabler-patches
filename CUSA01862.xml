@@ -133,7 +133,7 @@
             <Line Type="mask" Address="48 8d 05 ?? ?? ?? ?? 48 8b 38 be 02 00 00 00 e8 ?? ?? ?? ?? 48 8d 1d" Value="be01000000" Offset="+10" />
         </PatchList>
     </Metadata>
-    <Metadata Title="Disney Infinity 3.0 Edition" Name="120 FPS (experimental)" Note="Experimental: for a 120 Hz display. The lines of '60 FPS Unlock V2' (the game shows a new frame at every refresh); NeoEnabler 0.6.0+ turns the 120 Hz video output on for the game. Enable only this frame rate entry. Tested on PS5 FW 13.60 with Native 4K: about 70 fps, not a locked 120." Author="Gregorious" PatchVer="2.0" AppVer="mask" AppElf="eboot.bin" NeoRequires="120hz">
+    <Metadata Title="Disney Infinity 3.0 Edition" Name="120 FPS (experimental)" Note="Experimental: for a 120 Hz display. The lines of '60 FPS Unlock V2' (the game shows a new frame at every refresh); NeoEnabler 0.6.0+ turns the 120 Hz video output on for the game. Enable only this frame rate entry. Tested on PS5 FW 13.60 with Native 4K: about 70 fps, not a locked 120 (most likely limited by the game logic running on a single CPU core)." Author="Gregorious" PatchVer="2.0" AppVer="mask" AppElf="eboot.bin" NeoRequires="120hz">
         <PatchList>
             <Line Type="mask" Address="41 c7 47 48 01 00 00 00 be 01 00 00 00 89 c7 e8 ?? ?? ?? ?? 49 8d bf 78 88 00 00" Value="41c7474800000000be00000000" Offset="+0" />
             <Line Type="mask" Address="48 8d 05 ?? ?? ?? ?? 48 8b 38 be 02 00 00 00 e8 ?? ?? ?? ?? 48 8d 1d" Value="be01000000" Offset="+10" />

@@ -54,8 +54,8 @@ Tested on a PS5 with firmware 13.60.
 ## 120 FPS (experimental)
 
 - Needs a 120 Hz display. NeoEnabler 0.6.0+ turns the 120 Hz video output on for the game by itself.
-- In testing they reach about 70 fps (LEGO 70–95), not a locked 120. The limit is not understood yet: turning
-  vsync off (Disney Infinity test) and a faster CPU clock did not change it.
+- In testing they reach about 70 fps (LEGO 70–95), not a locked 120. This is most likely a limit of how the games
+  run: their main game logic runs on a single CPU core. Turning vsync off did not change it.
 - The PS5 does not support VRR for PS4 games.
 - NeoEnabler's CPU/GPU boost did not raise the frame rate in these games and makes the console run hotter.
 
