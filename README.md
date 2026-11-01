@@ -1,68 +1,68 @@
-# LEGO Dimensions i Disney Infinity 3.0: tryb PS4 Pro na PS5
+# NeoEnabler patches: LEGO Dimensions and Disney Infinity 3.0 in PS4 Pro mode
 
-Patche ps-patch-system, które uruchamiają obie gry w trybie PS4 Pro na PS5
-(przez NeoEnabler) w 1080p albo natywnym 4K, z 60 FPS.
+ps-patch-system patches that run both games in PS4 Pro mode on a PS5 (through NeoEnabler) at 1080p or
+native 4K, with 60 FPS.
 
-| Gra | Wersja | Plik |
+| Game | Version | File |
 |---|---|---|
 | LEGO Dimensions | CUSA01176, 01.24 | `CUSA01176.xml` |
 | Disney Infinity 3.0 | CUSA01862, 01.06 | `CUSA01862.xml` |
 
-Testowane na PS5 z firmware 13.60.
+Tested on a PS5 with firmware 13.60.
 
-## Wymagania
+## Requirements
 
-- ps-patch-system;
-- [NeoEnabler](https://github.com/gasb07/NeoEnabler) **0.5.3 lub nowszy**
-  (testowany 0.6.1). Starsze wersje nie włączą trybu Pro dla tych gier.
+- ps-patch-system
+- [NeoEnabler](https://github.com/gasb07/NeoEnabler) **0.5.3 or newer** (tested with 0.6.1). Older versions do
+  not start these games in PS4 Pro mode.
 
-## Instalacja
+## Installation
 
-1. Skopiuj `CUSA01176.xml` i `CUSA01862.xml` do `/data/user/patches/xml_orbis/`
-   na konsoli (np. przez FTP).
-2. Wyślij ps-patch-system, a potem NeoEnabler (`neo-manager.elf`).
-3. W panelu NeoEnablera (`http://<IP PS5>:8765`) zaznacz dla gry:
-   - **jeden** wpis rozdzielczości,
-   - **jeden** wpis FPS,
-   - w LEGO opcjonalnie efekty.
-4. Dla wpisów 4K ustaw wyjście wideo PS5 na 2160p.
+1. Copy `CUSA01176.xml` and `CUSA01862.xml` to `/data/user/patches/xml_orbis/` on the console (for example over
+   FTP).
+2. Send ps-patch-system, then NeoEnabler (`neo-manager.elf`).
+3. In the NeoEnabler panel (`http://<PS5 IP>:8765`) enable, per game:
+   - **one** resolution entry,
+   - **one** frame rate entry,
+   - optionally the effects in LEGO Dimensions.
+4. For the 4K entries, set the PS5 video output to 2160p.
 
-## Wpisy
+## Entries
 
 ### LEGO Dimensions
 
-| Wpis | Opis |
+| Entry | Description |
 |---|---|
-| `1080p (PS4 Pro mode)` | 1920×1080 w trybie Pro |
-| `Native 4K (PS4 Pro mode)` | 3840×2160, ok. 60 FPS z wpisem 60 FPS |
-| `1440p internal - 2160p output (PS4 Pro mode)` | render 2560×1440, wyjście 4K; nietestowany |
-| `60 FPS - engine target` | 60 FPS z vsync (autor: connorh315) |
-| `120 FPS - engine target (experimental)` | **eksperymentalny**, 120 Hz; zawiera wpis 60 FPS, włącz zamiast niego |
-| `Disable depth of field` | wyłącza głębię ostrości |
-| `Enable FXAA` | włącza FXAA |
+| `1080p (PS4 Pro mode)` | 1920×1080 in PS4 Pro mode |
+| `Native 4K (PS4 Pro mode)` | 3840×2160, about 60 fps with the 60 FPS entry |
+| `1440p internal - 2160p output (PS4 Pro mode)` | 2560×1440 render, 4K output; not tested yet |
+| `60 FPS - engine target` | 60 fps with vsync (by connorh315) |
+| `120 FPS - engine target (experimental)` | **experimental**, 120 Hz; includes the 60 FPS line, enable it instead |
+| `Disable depth of field` | turns off depth of field |
+| `Enable FXAA` | turns on FXAA |
 
 ### Disney Infinity 3.0
 
-| Wpis | Opis |
+| Entry | Description |
 |---|---|
-| `1080p (PS4 Pro mode)` | 1920×1080 w trybie Pro |
+| `1080p (PS4 Pro mode)` | 1920×1080 in PS4 Pro mode |
 | `Native 4K (PS4 Pro mode)` | 3840×2160 |
-| `Native 4K (PS4 Pro mode, requires 8 GiB)` | to samo z budżetem 8 GiB NeoEnablera (FW 13.20/13.60) |
-| `60 FPS Unlock V2` | 60 FPS z vsync |
-| `120 FPS (experimental)` | **eksperymentalny**, 120 Hz; włącz zamiast wpisu 60 FPS |
+| `Native 4K (PS4 Pro mode, requires 8 GiB)` | the same with NeoEnabler's 8 GiB memory budget (FW 13.20/13.60) |
+| `60 FPS Unlock V2` | 60 fps with vsync |
+| `120 FPS (experimental)` | **experimental**, 120 Hz; enable it instead of the 60 FPS entry |
 
-## 120 FPS (eksperymentalne)
+## 120 FPS (experimental)
 
-- Wymaga monitora 120 Hz. NeoEnabler 0.6.0+ sam włącza wyjście 120 Hz na czas
-  gry.
-- Obie gry mają tylko dwa bufory obrazu i vsync. W testach wychodzi ok. 70 FPS
-  (LEGO 70–95), a nie stałe 120.
-- PS5 nie obsługuje VRR w grach z PS4.
+- Needs a 120 Hz display. NeoEnabler 0.6.0+ turns the 120 Hz video output on for the game by itself.
+- Both games use only two display buffers with vsync, so in testing they reach about 70 fps (LEGO 70–95), not a
+  locked 120.
+- The PS5 does not support VRR for PS4 games.
+- NeoEnabler's CPU/GPU boost did not raise the frame rate in these games and makes the console run hotter.
 
-## Autorzy
+## Credits
 
-- Gregorious: poprawki trybu Pro, wpisy rozdzielczości, efekty, wpisy FPS
-  Disneya, 120 FPS.
-- connorh315: `60 FPS - engine target` (LEGO).
+- Gregorious: PS4 Pro mode fixes, resolution entries, effects, Disney frame rate entries, 120 FPS.
+- connorh315: `60 FPS - engine target` (LEGO Dimensions).
+- gasb07: NeoEnabler.
 
-Repozytorium zawiera tylko pliki XML z patchami, bez plików gier.
+This repository contains only the patch XML files, no game files.
